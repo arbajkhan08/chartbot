@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+# <<<<<<< HEAD
 import os
 import time
 import streamlit as st
@@ -153,7 +153,7 @@ if messages and messages[-1]["role"] == "assistant":
         if st.button("🔄 Regenerate"):
             messages.pop()
             st.rerun()
-===
+# ===
 import os
 import streamlit as st
 from dotenv import load_dotenv
@@ -196,4 +196,4 @@ with st.chat_message("assistant"):
     reply = stream.choices[0].message.content.strip()
     st.session_state.messages.append({"role":"assistant","content":reply})
     st.write(reply)
->>>>>>> f290fd1271020eb7b3256d49aafac1030c386f19
+# >>>>>>> f290fd1271020eb7b3256d49aafac1030c386f19
